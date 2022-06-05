@@ -6,7 +6,7 @@ function insertRows(newdb, title) {
       return console.log("Error in Database Write:  " + err.message);
     }
     console.log(`Row was added to the table`);
-    runQueries(newdb);
+    //runQueries(newdb);
   });
 }
 module.exports = insertRows;

@@ -6,7 +6,7 @@ function updateRows(newdb, id, stage) {
       return console.log("Error in Database edit:  " + err.message);
     }
     console.log(`Row was edited to the table`);
-    runQueries(newdb);
+    //runQueries(newdb);
   });
 }
 module.exports = updateRows;
