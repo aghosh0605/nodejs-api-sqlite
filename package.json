@@ -1,0 +1,28 @@
+{
+  "name": "internship-c1",
+  "version": "1.0.0",
+  "description": "Internship Test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aghosh0605/nodejs-c1.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Aniruddha Ghosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aghosh0605/nodejs-c1/issues"
+  },
+  "homepage": "https://github.com/aghosh0605/nodejs-c1#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "sqlite3": "^5.0.8"
+  }
+}
