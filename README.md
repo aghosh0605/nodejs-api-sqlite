@@ -17,3 +17,8 @@ Node Js ExpressJS SQLite3 is used to make API call and CRUD operations to SQL Da
 - DB Name = boards.db
 - Table Name = boards
 - Column Name = id,stage,title
+
+# API Endpoints
+- GET `/boards/`      --- To view all the boards in the database
+- POST `/boards/`     --- To send and store data to server. JSON Payload **{"title":"Titile as you wish"}**
+- PUT `/boards/6`   --- To change any data in database. JSON Payoad **{"stage":2}**. The `6` can be any id that present in database. `2` can be anything between 1,2 and 3.
