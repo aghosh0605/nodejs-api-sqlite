@@ -1,4 +1,4 @@
-const runQueries = require("./readDb");
+// const runQueries = require("./readDb");
 
 function insertRows(newdb, title) {
   newdb.run("INSERT INTO boards(title) VALUES(?)", [title], (err) => {

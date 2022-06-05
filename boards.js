@@ -15,6 +15,7 @@ router.get("/", (req, res, next) => {
       next();
     });
   } catch (error) {
+    res.status(500).json({ error: "Internal Server Error" });
     console.log(error);
   }
 });
@@ -37,6 +38,7 @@ router.post("/", async (req, res, next) => {
       }
     );
   } catch (error) {
+    res.status(500).json({ error: "Internal Server Error" });
     console.log(error);
   }
 });
@@ -50,7 +52,6 @@ router.put("/:id", (req, res, next) => {
         .json({ error: "Please enter valid stage value as payload" });
       return;
     }
-
     //console.log(req.params.id, req.body.stage);
     updateData(db, req.params.id, req.body.stage);
     db.get("SELECT * FROM boards WHERE id=?", [req.params.id], (err, row) => {
@@ -62,6 +63,7 @@ router.put("/:id", (req, res, next) => {
       next();
     });
   } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
     console.log(err);
   }
 });

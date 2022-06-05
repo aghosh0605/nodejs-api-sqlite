@@ -1,4 +1,4 @@
-const runQueries = require("./readDb");
+// const runQueries = require("./readDb");
 
 function updateRows(newdb, id, stage) {
   newdb.run(`UPDATE boards SET stage=? WHERE id=?`, [stage, id], (err) => {
